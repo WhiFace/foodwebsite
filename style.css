@@ -181,13 +181,24 @@ html {
 
 .card {
   width: 30rem;
-  background-color: #a79a2d;
+
+  /* background-color: #a79a2d; */
+
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 212, 255, 1) 100%,
+    rgba(9, 9, 121, 1) 45%
+  );
+
+  /* -webkit-text-fill-color: transparent; */
+
   padding: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 1rem 1rem 1rem #000;
+  /* box-shadow: 1rem 1rem 1rem #000; */
   position: relative;
   transform: rotateY(20deg) skewX(-2deg);
   transition: transform 0.5s, box-shadow 0.5s;
@@ -201,20 +212,27 @@ html {
   content: "";
   height: 100%;
   width: 1rem;
-  background-color: #817824;
+  background: (0, 35, 100);
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(9, 9, 121, 1) 45%,
+    rgba(2, 0, 36, 1) 100%
+  );
+  /* background-color: #817824; */
   position: absolute;
   top: 0;
   left: -1rem;
   transform: skewY(45deg);
   transform-origin: right;
-  box-shadow: -0.1rem -0.1rem 0.1rem #000;
+  /* box-shadow: -0.1rem -0.1rem 0.1rem #000; */
 }
 
 .card::after {
   content: "";
   height: 1rem;
   width: 100%;
-  background-color: #8f8317;
+  background-color: #fff;
   position: absolute;
   top: -1rem;
   left: 0rem;
@@ -232,14 +250,14 @@ html {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  color: #111;
+  color: #eee;
   margin: 2rem 0;
   text-shadow: 0.15rem 0.15rem 0.15rem #000;
 }
 
 .card-btn {
   width: 70%;
-  background-color: #111;
+  background-color: #fff;
   color: #888;
   border-radius: 5rem;
   font-size: 1.5rem;
@@ -380,7 +398,7 @@ html {
 .section-4-heading {
   font-size: 4rem;
   font-weight: 900;
-  color: #a79a2d;
+  color: #eee;
 }
 
 .section-4-paragraph {
@@ -397,14 +415,14 @@ html {
   width: 35rem;
   height: 5rem;
   padding: 1rem;
-  border: 0.2rem solid #a79a2d;
+  border: 0.2rem solid #333;
   font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
-  color: #a79a2d;
+  color: #eee;
 }
 .signup-form-input::placeholder {
-  color: #a79a2d;
+  color: #999;
 }
 
 .signup-form-btn {
@@ -413,7 +431,7 @@ html {
   width: 4rem;
   height: 4rem;
   background-color: #333;
-  color: #a79a2d;
+  color: #eee;
   border: none;
   font-size: 1, 8rem;
   cursor: pointer;
